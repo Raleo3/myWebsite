@@ -1,0 +1,5 @@
+/* Loader */
+
+	html body:before, html body:after {
+		display: none !important;
+	}
