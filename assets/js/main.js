@@ -114,14 +114,24 @@
                 );
             });
 
-        // Star Background
-            setInterval(function () {
-                $('.star-1').fadeOut(150).delay(2000).fadeIn(300).fadeOut(150).delay(1254);
-                $('.star-2').fadeOut(300).fadeIn(120).fadeOut(120).delay(1920);
-                $('.star-3').fadeOut(150).delay(1200).fadeIn(300).fadeOut(150).delay(800);
-                $('.star-4').fadeOut(700).fadeIn(300).fadeOut(160).delay(1350);
-                $('.star-5').fadeOut(700).fadeIn(300).fadeOut(160).delay(1350);
-            }, 1);
+        // Star Background - Desktop Only
+            var starInterval = function () {
+                $('.star-1').fadeOut(150).delay(2000).fadeIn(300).fadeOut(150).delay(2854);
+                $('.star-2').fadeOut(300).fadeIn(120).fadeOut(120).delay(2920);
+                $('.star-3').fadeOut(150).delay(1200).fadeIn(300).fadeOut(150).delay(2300);
+                $('.star-4').fadeOut(700).fadeIn(300).fadeOut(160).delay(2850);
+                $('.star-5').fadeOut(700).fadeIn(300).fadeOut(160).delay(2850);
+            };
+
+            if (window.innerWidth >= 932) {
+                setInterval(starInterval, 250);
+            }
+
+            $(window).resize(function() {
+                if (window.innerWidth >= 932) {
+                    setInterval(starInterval, 250);
+                }
+            });
 
         // Bar Charts
             $(".legend-symbol").hover(function() {
@@ -137,9 +147,9 @@
             function replaceImageOne() {
                 if (isFirefox) {
                     if (window.innerWidth <= 980) {
-                        $(".image-one-small").attr("src", "https://s3.amazonaws.com/richardleo-website/rich_and_maddie.jpeg");
+                        $(".image-one-small").attr("src", "https://dw4avcgldbxus.cloudfront.net/rich_and_maddie.jpeg");
                     } else {
-                        $(".image-one-small").attr("src", "https://s3.amazonaws.com/richardleo-website/market.jpg");
+                        $(".image-one-small").attr("src", "https://dw4avcgldbxus.cloudfront.net/market.jpg");
                     }
                 }
             };
@@ -244,7 +254,7 @@
                 // Create bg and append it to body.
                     $bg = $('<div class="main-bg" id="' + $this.attr('id') + '-bg"></div>')
                         .css('background-image', (
-                            'url("https://s3.amazonaws.com/richardleo-website/overlay.png"), url("' + $primaryImg.attr('src') + '")'
+                            'url("https://dw4avcgldbxus.cloudfront.net/overlay.png"), url("' + $primaryImg.attr('src') + '")'
                         ))
                         .appendTo($body);
 
