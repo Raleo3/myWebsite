@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Permanent+Marker');
 
 /* Reset */
 
@@ -1876,20 +1876,20 @@
 	.star.star-1 {
 	  width: 20px;
 	  height: 14px;
-	  top: 20px;
-	  left: 380px;
+	  top: 60px;
+	  left: 180px;
 	}
 	.star.star-2 {
 	  width: 13px;
 	  height: 27px;
-	  top: 18px;
+	  top: 38px;
 	  left: 254px;
 	}
 	.star.star-3 {
 	  width: 14px;
 	  height: 10px;
-	  top: 115px;
-	  left: 172px;
+	  top: 75px;
+	  left: 272px;
 	}
 	.star.star-4 {
 	  width: 18px;
@@ -1904,13 +1904,9 @@
 	  left: 50px;
 	}
 
-	@media all and (max-width: 651px) {
-
-		.star.star-4 {
-		  width: 18px;
-		  height: 20px;
-		  top: 346px;
-		  left: 150px;
+	@media all and (max-width: 932px) {
+		.star {
+			display: none;
 		}
 	}
 
@@ -2516,9 +2512,6 @@
 	@media screen and (min-width: 980px) {
 		.container .image-one-large {
 				width: 100%;
-				-ms-transform: rotate(180deg); /* IE 9 */
-				-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-				transform: rotate(180deg);
 		}
 	}
 
@@ -2528,10 +2521,7 @@
 		}
 
 	  .image-one-small {
-		    content: url("https://dw4avcgldbxus.cloudfront.net/rich_and_maddie.jpeg");
-		    -ms-transform: rotate(180deg); /* IE 9 */
-		    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-		    transform: rotate(180deg);
+		    content: url("https://dw4avcgldbxus.cloudfront.net/seattle_boatride.jpg");
 	  }
 	}
 
