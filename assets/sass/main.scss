@@ -48,7 +48,7 @@
     html {
         background-color:       _palette(accent2, bg);
         background-attachment:  fixed,                      fixed;
-        background-image:       url("https://s3.amazonaws.com/richardleo-website/overlay.png"),  url("https://s3.amazonaws.com/richardleo-website/desert-night.jpg");
+        background-image:       url("https://dw4avcgldbxus.cloudfront.net/overlay.png"),  url("https://dw4avcgldbxus.cloudfront.net/desert-night.jpg");
         background-position:    top left,                   center center;
         background-repeat:      repeat,                     none;
         background-size:        auto,                       cover;
@@ -589,7 +589,7 @@
         position: relative;
 
         &:before {
-            background: url("https://s3.amazonaws.com/richardleo-website/overlay.png");
+            background: url("https://dw4avcgldbxus.cloudfront.net/overlay.png");
             content: '';
             display: block;
             height: 100%;
@@ -1031,7 +1031,7 @@
         .goto-next {
             @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
             background-color: _palette(border-bg);
-            background-image: url("https://s3.amazonaws.com/richardleo-website/arrow.svg");
+            background-image: url("https://dw4avcgldbxus.cloudfront.net/arrow.svg");
             background-position: center center;
             background-repeat: no-repeat;
             border-radius: 100%;

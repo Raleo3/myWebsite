@@ -137,9 +137,9 @@
             function replaceImageOne() {
                 if (isFirefox) {
                     if (window.innerWidth <= 980) {
-                        $(".image-one-small").attr("src", "https://s3.amazonaws.com/richardleo-website/rich_and_maddie.jpeg");
+                        $(".image-one-small").attr("src", "https://dw4avcgldbxus.cloudfront.net/rich_and_maddie.jpeg");
                     } else {
-                        $(".image-one-small").attr("src", "https://s3.amazonaws.com/richardleo-website/market.jpg");
+                        $(".image-one-small").attr("src", "https://dw4avcgldbxus.cloudfront.net/market.jpg");
                     }
                 }
             };
@@ -244,7 +244,7 @@
                 // Create bg and append it to body.
                     $bg = $('<div class="main-bg" id="' + $this.attr('id') + '-bg"></div>')
                         .css('background-image', (
-                            'url("https://s3.amazonaws.com/richardleo-website/overlay.png"), url("' + $primaryImg.attr('src') + '")'
+                            'url("https://dw4avcgldbxus.cloudfront.net/overlay.png"), url("' + $primaryImg.attr('src') + '")'
                         ))
                         .appendTo($body);
 

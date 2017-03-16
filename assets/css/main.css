@@ -1,8 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Permanent+Marker');
 
 /* Reset */
 
@@ -1309,7 +1306,7 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("https://s3.amazonaws.com/richardleo-website/overlay.png"), url("https://s3.amazonaws.com/richardleo-website/desert-night.jpg");
+		background-image: url("https://dw4avcgldbxus.cloudfront.net/overlay.png"), url("https://dw4avcgldbxus.cloudfront.net/desert-night.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -1341,10 +1338,8 @@
 
 	body, input, select, textarea {
 		color: #6f7577;
-		/*font-family: "Raleway", "Helvetica", sans-serif;*/
 		font-family: 'Josefin Sans', sans-serif;
 		font-size: 15pt;
-		/*font-weight: 400;*/
 		line-height: 1.75em;
 	}
 
@@ -1874,7 +1869,7 @@
 
 	.star {
 	  position: absolute;
-	  background: url("https://s3.amazonaws.com/richardleo-website/sparkle.png") no-repeat;
+	  background: url("https://dw4avcgldbxus.cloudfront.net/sparkle.png") no-repeat;
 	  background-size: contain;
 	  overflow: hidden;
 	}
@@ -2472,7 +2467,7 @@
 	}
 
 		.image:before {
-			background: url("https://s3.amazonaws.com/richardleo-website/overlay.png");
+			background: url("https://dw4avcgldbxus.cloudfront.net/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
@@ -2533,7 +2528,7 @@
 		}
 
 	  .image-one-small {
-		    content: url("https://s3.amazonaws.com/richardleo-website/rich_and_maddie.jpeg");
+		    content: url("https://dw4avcgldbxus.cloudfront.net/rich_and_maddie.jpeg");
 		    -ms-transform: rotate(180deg); /* IE 9 */
 		    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
 		    transform: rotate(180deg);
@@ -3053,7 +3048,7 @@
 			-ms-transition: transform 1s;
 			transition: transform 1s;
 			background-color: rgba(144, 144, 144, 0.075);
-			background-image: url("https://s3.amazonaws.com/richardleo-website/arrow.svg");
+			background-image: url("https://dw4avcgldbxus.cloudfront.net/arrow.svg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			border-radius: 100%;
