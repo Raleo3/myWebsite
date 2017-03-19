@@ -127,7 +127,7 @@
                 setInterval(starInterval, 250);
             }
 
-            $(window).resize(function() {
+            $window.resize(function() {
                 if (window.innerWidth >= 932) {
                     setInterval(starInterval, 250);
                 }
@@ -139,25 +139,6 @@
                     id = $this.attr("id");
 
                 $(".chart--" + id).toggleClass("hvr-grow-active");
-            });
-
-        // FireFox image-one Substitute
-            var isFirefox = typeof InstallTrigger !== 'undefined';
-
-            function replaceImageOne() {
-                if (isFirefox) {
-                    if (window.innerWidth <= 980) {
-                        $(".image-one-small").attr("src", "https://dw4avcgldbxus.cloudfront.net/rich_and_maddie.jpeg");
-                    } else {
-                        $(".image-one-small").attr("src", "https://dw4avcgldbxus.cloudfront.net/market.jpg");
-                    }
-                }
-            };
-
-            replaceImageOne();
-
-            $(window).resize(function() {
-                replaceImageOne();
             });
 
         // Header.

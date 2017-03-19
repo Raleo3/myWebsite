@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Permanent+Marker');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Permanent+Marker");
 
 /* Reset */
 
@@ -1349,13 +1349,13 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #8cd1a8;
+		color: #00b30f;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #8cd1a8 !important;
+			color: #00b30f !important;
 			text-decoration: none;
 		}
 
@@ -1997,7 +1997,7 @@
 	  line-height: 20px;
 	  min-height: 100%;
 	  width: 8rem;
-	  border-left: 3px solid #8cd1a8;
+	  border-left: 3px solid #00b30f;
 	  margin-left: 1rem;
 	  font-style: italic;
 	  display: -webkit-box;
@@ -2082,7 +2082,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: inset 0 0 0 2px #8cd1a8;
+			box-shadow: inset 0 0 0 2px #00b30f;
 		}
 
 	.select-wrapper {
@@ -2189,7 +2189,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: inset 0 0 0 2px #8cd1a8;
+			box-shadow: inset 0 0 0 2px #00b30f;
 		}
 
 	input[type="radio"] + label:before {
@@ -2238,14 +2238,14 @@
 	  height: 60px;
 	  background: none;
 	  margin: auto;
-	  border: 2px solid #8cd1a8;
+	  border: 2px solid #00b30f;
 	  font-size: 18px;
 	  color: white !important;
 	  cursor: pointer;
 	  outline: none;
 	  text-align: center;
 	  font-weight: 400;
-	  box-shadow: 0px 0px 0px #8cd1a8;
+	  box-shadow: 0px 0px 0px #00b30f;
 	  -moz-box-sizing: border-box;
 	  -webkit-box-sizing: border-box;
 	  box-sizing: border-box;
@@ -2258,8 +2258,8 @@
 	  transition: background 0.4s, color 0.4s, font-size 0.05s, width 0.4s, border 0.4s;
 	}
 	.submit-wrap button:hover {
-	  background: #9ed8b6;
-	  border: 2px solid #9ed8b6;
+	  background: #00bd10;
+	  border: 2px solid #00bd10;
 	  color: white !important;
 	}
 	.submit-wrap i {
@@ -2300,7 +2300,7 @@
 	  background: none;
 	}
 	.submit-wrap .filled {
-	  background: #8cd1a8;
+	  background: #00b30f;
 	}
 
 	@-moz-keyframes fill-stroke {
@@ -2463,7 +2463,6 @@
 	}
 
 		.image:before {
-			background: url("https://dw4avcgldbxus.cloudfront.net/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
@@ -2511,24 +2510,29 @@
 
 	@media screen and (min-width: 980px) {
 		.container .image-one-large {
-				width: 100%;
+			width: 100%;
 		}
 	}
 
 	@media screen and (max-width: 980px) {
 		.image-one-large {
-				display: none;
+			display: none;
 		}
 
-	  .image-one-small {
-		    content: url("https://dw4avcgldbxus.cloudfront.net/seattle_boatride.jpg");
-	  }
+		#image-one-small::before {
+			content: "";
+			background: url("https://dw4avcgldbxus.cloudfront.net/seattle_boatride.jpg");
+			background-size: cover;
+		    background-repeat:   no-repeat;
+		    background-position: center center;
+		}
 	}
 
 /* My Resume */
 
 	#my_resume {
-			color: #8cd1a8 !important;
+		color: #00b30f !important;
+		font-weight: 400 !important;
 	}
 
 /* List */
@@ -2927,7 +2931,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #8cd1a8;
+			background-color: #00b30f;
 			border: 0;
 			box-shadow: none;
 			color: #ffffff !important;
@@ -2938,7 +2942,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9ed8b6;
+				background-color: #00bd10;
 			}
 
 			input[type="submit"].special:active,
@@ -3096,7 +3100,7 @@
 				}
 
 			#header header h1 {
-				font-size: 2.25em;
+				font-size: 3em;
 				line-height: 1.25em;
 				margin: 0;
 				padding-top: 10px;
@@ -3139,7 +3143,7 @@
 		animation: topToBottom 12.5s linear infinite 0s;
 		-ms-animation: topToBottom 12.5s linear infinite 0s;
 		-webkit-animation: topToBottom 12.5s linear infinite 0s;
-		color: #8cd1a8;
+		color: #00b30f;
 		opacity: 0;
 		overflow: hidden;
 		position: absolute;
@@ -3193,68 +3197,21 @@
 		100% { opacity: 0; }
 	}
 
-	@media screen and (max-width: 1680px) {
 
-			#dynamic-paragraph {
-					text-align: left;
-					padding-left: 65px;
-			}
+	#dynamic-paragraph {
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 120px;
 	}
 
-	@media screen and (max-width: 980px) {
-
-		#dynamic-paragraph {
-				text-align: center;
-				padding-left: 0px;
-				padding-right: 120px;
-		}
-	}
-
-	@media screen and (min-width: 492px) and (max-width: 550px) {
-
-		#dynamic-paragraph {
-				text-align: left;
-				padding-left: 0px;
-				padding-right: 0px;
-		}
-	}
-
-	@media screen and (min-width: 480px) and (max-width: 493px) {
-
-		#dynamic-paragraph {
-				text-align: left;
-				margin-left: -12px;
-				padding-left: 0px;
-				padding-right: 0px;
-		}
-	}
-
-	@media screen and (max-width: 425px) {
-
-		#dynamic-paragraph {
-				text-align: left;
-				padding-left: 0px;
-				padding-right: 0px;
-		}
-	}
-
-	@media screen and (max-width: 400px) {
-
-		#dynamic-paragraph {
-				text-align: left;
-				margin-left: -12px;
-				padding-left: 0px;
-				padding-right: 0px;
-		}
-	}
 
 /* Project Container */
 
 	.project-container {
 		padding-bottom: 2.45em;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+	    width: 80%;
+	    margin: 0 auto;
+	    text-align: center;
   }
 
   @media screen and (max-width: 604px) and (min-width: 480px){
@@ -3420,13 +3377,15 @@
 
 	#p90::after {
 		content: "jQuery";
+		filter: brightness(130%);
+		-webkit-filter: brightness(130%);
 	}
 	.chart--p90 {
 		background-color: none !important;
 		background: -webkit-linear-gradient(left, transparent , #7acef4); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, transparent, #7acef4); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, transparent, #7acef4); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, transparent , #7acef4) !important; /* Standard syntax (must be last) */
+	    background: -o-linear-gradient(right, transparent, #7acef4); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, transparent, #7acef4); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, transparent , #7acef4) !important; /* Standard syntax (must be last) */
 	}
 
 	/*Sass*/
@@ -3444,9 +3403,9 @@
 		filter: brightness(130%);
 		-webkit-filter: brightness(130%);
 		background: -webkit-linear-gradient(left, transparent , #c6538c); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, transparent, #c6538c); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, transparent, #c6538c); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, transparent , #c6538c) !important; /* Standard syntax (must be last) */
+	    background: -o-linear-gradient(right, transparent, #c6538c); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, transparent, #c6538c); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, transparent , #c6538c) !important; /* Standard syntax (must be last) */
 	}
 
 	/*Wordpress*/
@@ -3465,9 +3424,9 @@
 		filter: brightness(130%);
 		-webkit-filter: brightness(130%);
 		background: -webkit-linear-gradient(left, transparent , #0087be); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, transparent, #0087be); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, transparent, #0087be); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, transparent , #0087be) !important; /* Standard syntax (must be last) */
+	    background: -o-linear-gradient(right, transparent, #0087be); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, transparent, #0087be); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, transparent , #0087be) !important; /* Standard syntax (must be last) */
 	}
 
 	/*AWS*/
@@ -3486,9 +3445,9 @@
 		filter: brightness(130%);
 		-webkit-filter: brightness(130%);
 		background: -webkit-linear-gradient(left, transparent , #ff9900); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, transparent, #ff9900); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, transparent, #ff9900); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, transparent , #ff9900) !important; /* Standard syntax (must be last) */
+	    background: -o-linear-gradient(right, transparent, #ff9900); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, transparent, #ff9900); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, transparent , #ff9900) !important; /* Standard syntax (must be last) */
 	}
 
 	/*Angular*/
@@ -3506,9 +3465,9 @@
 		filter: brightness(130%);
 		-webkit-filter: brightness(130%);
 		background: -webkit-linear-gradient(left, transparent , #d34836); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, transparent, #d34836); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, transparent, #d34836); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, transparent , #d34836) !important; /* Standard syntax (must be last) */
+	    background: -o-linear-gradient(right, transparent, #d34836); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, transparent, #d34836); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, transparent , #d34836) !important; /* Standard syntax (must be last) */
 	}
 
 	[data-doughnut] {
@@ -3769,7 +3728,7 @@
 	@media screen and (max-width: 560px) {
 
 		#header header h1 {
-			font-size: 1.8em !important;
+			font-size: 2.3em !important;
 		}
 
 		#header header p {
@@ -3781,7 +3740,7 @@
 	@media screen and (max-width: 450px) {
 
 		#header header h1 {
-			font-size: 1.5em !important;
+			font-size: 2em !important;
 		}
 
 		#header header p {
@@ -3830,7 +3789,7 @@
 				}
 
 					#header header h1 {
-						font-size: 2em;
+						font-size: 2.5em;
 					}
 
 					#header header p {
