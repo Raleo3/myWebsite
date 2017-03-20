@@ -1,1 +1,1 @@
-A Personality Page - Designed by Richard Leo
+Personality - Designed by Richard Leo
